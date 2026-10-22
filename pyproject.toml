@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "approute-vpn"
+version = "0.1.0"
+description = "Launch selected Linux applications through WireGuard"
+requires-python = ">=3.10"
+
+[project.scripts]
+approute = "approute.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["approute*"]
